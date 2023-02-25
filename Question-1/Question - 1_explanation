@@ -1,0 +1,45 @@
+Question :-
+
+Implement the partition() and quickSort() functions to sort an array.
+Analyze time complexity and the underlying recurrence relation.
+
+Expalanation :-
+
+In this question, we have to take an array as an input from the user.
+Then, we have to implement the partition() and quickSort() functions to sort the array.
+
+The key process in quickSort is a partition(). 
+The target of partitions is, given an array and an element x of an array as the pivot, 
+put x at its correct position in a sorted array and put all smaller elements (smaller than x) before x, 
+and put all greater elements (greater than x) after x. All this should be done in linear time.
+
+Time Complexity :-
+
+The partition() function takes O(n) time to partition the array, where n is the number of elements in the subarray to be partitioned.
+The quickSort() function recursively divides the array into two subarrays and calls partition() function once for each division.
+
+Therefore, the time complexity of quickSort() function can be expressed by the recurrence relation:
+⭐️ T(n) = T(k) + T(n-k-1) + O(n), where k is the number of elements smaller than the pivot element in the current subarray.
+
+The worst-case time complexity of quickSort() occurs when the pivot element is always chosen as the smallest or largest element in the subarray, 
+and the partition function divides the array into subarrays of size 0 and n-1 in each recursive call.
+
+In the worst-case, the partition() function takes O(n) time, and the quickSort() function will make n recursive calls, 
+each taking O(n) time, resulting in a time complexity of O(n^2).
+
+However, on average, the pivot element is chosen randomly, which results in balanced subarrays in each recursive call, 
+and the quickSort() function has a time complexity of O(n log n) in the average case.
+
+Therefore, the time complexity of quickSort() is O(n^2) in the worst-case and O(n log n) in the average case.
+
+⭐️ Best-Case Time Complexity :- O(n log n)
+⭐️ Average-Case Time Complexity :- O(n log n)
+⭐️ Worst-Case Time Complexity :- O(n^2)
+
+---------------------------------------------------------------------------------
+
+Space Complexity :-
+
+The quickSort() function uses O(log n) space on the call stack due to the recursive calls.
+The partition() function uses O(1) space.
+Therefore, the space complexity of quickSort() is O(log n).
