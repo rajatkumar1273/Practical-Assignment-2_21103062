@@ -1,0 +1,15 @@
+Question :-
+
+Consider an array, “A: 27, 17, 02, 13, 19, 07, 18”. 
+Write a program to sort this array using merge sort algorithm.
+
+Explanation :-
+
+In this question, we are provided with an array and we have to sort this array using merge sort algorithm.
+
+The 'merge()' function takes three indices 'left', 'mid', and 'right' and merges the two subarrays 'arr[left..mid]' and 'arr[mid+1..right]' 
+into a single sorted subarray. It first creates two temporary arrays 'L' and 'R' to hold the left and right subarrays, 
+and then iteratively compares the elements in 'L' and 'R' and copies the smaller element to the merged subarray 'arr'. 
+After one of the subarrays is fully copied, the remaining elements in the other subarray are copied to 'arr'.
+
+The merge_sort() function takes three arguments arr, left, and right and recursively sorts the subarray arr[left..right] using the merge sort algorithm. If the subarray has length greater than 1, it finds the middle index mid and recursively sorts the left subarray arr[left..mid] and the right subarray `arr[mid+1..
