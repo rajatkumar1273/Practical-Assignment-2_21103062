@@ -1,0 +1,20 @@
+// This is the output of Question --> 2
+
+Enter rows and columns of first matrix
+4 4
+enter values into first matrix
+0 0 3 4
+5 6 0 0
+0 0 6 5
+4 3 0 0
+Enter rows and columns of second matrix
+4 4
+enter values into second matrix
+0 0 6 5
+4 3 0 0
+0 0 3 4
+5 6 0 0
+20      24      9       12
+24      18      30      25
+25      30      18      24
+12      9       24      20
